@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Rodrigo Gomes</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="container">
+      <div class="page-header">
+        <div class="logo">
+          <a href="#">rodrigoGomes</a>
+        </div>
+        <input type="checkbox" id="click" />
+        <label for="click" class="mainicon">
+          <div class="menu">
+            <i class="bx bx-menu"></i>
+          </div>
+        </label>
+        <ul>
+          <li><a href="#" class="active" style="--navAni: 1">Início</a></li>
+          <li><a href="#about" style="--navAni: 2">Sobre</a></li>
+          <li>
+            <a href="./pages/portfolio.html" style="--navAni: 4">Portfólio</a>
+          </li>
+          <li>
+            <a href="./pages/contact.html" style="--navAni: 5">Contato</a>
+          </li>
+        </ul>
+        <label class="mode">
+          <input type="checkbox" id="darkModeToggle" />
+          <i class="bx bxs-moon"></i>
+        </label>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="container">
+      <div class="main">
+        <div class="detail">
+          <h3 class="hero-h3">Olá, eu sou</h3>
+          <h1 class="hero-h1">
+            <span style="color: #e91e63">Rodrigo</span> Gomes
+          </h1>
+          <p class="hero-typed">Eu sou um <span id="typed"></span></p>
+          <div class="hero-p">
+            Especializado em React Native/Web, Node.js, TypeScript,
+            Desenvolvimento de API's e DevOps. Co-fundador da startup Sollo
+            Soluções Tecnológicas, onde lidero o desenvolvimento de soluções
+            digitais inovadoras.
+          </div>
+          <div class="social">
+            <a href="#" style="--socialAni: 1"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+            <a href="#" style="--socialAni: 2"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+            <a href="#" style="--socialAni: 3"><i class="bx bxl-github"></i></a>
+            <a href="#" style="--socialAni: 4"
+              ><i class="bx bxl-facebook-circle"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about-section">
+      <div class="about-background">
+        <div class="about-background">
+          <div class="profile-container">
+            <!-- Hero Section About -->
+            <div class="hero-section">
+              <div class="info-section">
+                <h1 class="title">
+                  Minha trajetória na <span>tecnologia</span>.
+                </h1>
+                <p class="description">
+                  Sou Rodrigo Gomes, técnico em Informática formado pelo IF
+                  Sudeste MG – Campus Rio Pomba e estudante de Análise e
+                  Desenvolvimento de Sistemas. Minha jornada na tecnologia
+                  começou cedo, com participação em projetos de extensão como o
+                  Pandoo MG, onde tive meu primeiro contato com React.js.
+                  <br /><br />
+                  Durante a pandemia, atuei em um projeto de pesquisa voltado à
+                  divulgação científica da computação, e também tive minha
+                  primeira experiência profissional com desenvolvimento na RBM
+                  Web, onde aprimorei minhas habilidades técnicas.
+                  <br /><br />
+                  Em 2023, co-fundei a Sollo Soluções Tecnológicas, onde lidero
+                  o desenvolvimento de sistemas digitais, mesmo sem estrutura
+                  formal. Apesar dos desafios, sigo aprendendo e evoluindo como
+                  desenvolvedor, com três sistemas já em operação.
+                  <br /><br />
+                  Atualmente, concilio o trabalho como recepcionista em outra
+                  área, minha atuação na startup e meus estudos contínuos.
+                  Meu foco está em ampliar minhas competências técnicas e
+                  gerenciais e seguir evoluindo como profissional de tecnologia.
+                </p>
+              </div>
+            </div>
+
+            <!-- Tabs Section -->
+            <div class="tabs-section">
+              <div class="tabs-nav">
+                <button class="tab-btn active" data-tab="languages">
+                  Linguagens
+                </button>
+                <button class="tab-btn" data-tab="technologies">
+                  Tecnologias
+                </button>
+                <button class="tab-btn" data-tab="experience">
+                  Experiência
+                </button>
+                <button class="tab-btn" data-tab="education">Formação</button>
+              </div>
+
+              <!-- Languages -->
+              <div id="languages" class="tab-content active">
+                <div class="languages-grid">
+                  <div class="language-item">
+                    <i class="devicon-javascript-plain colored"></i>
+                    <h4>JavaScript</h4>
+                  </div>
+                  <div class="language-item">
+                    <i class="devicon-typescript-plain colored"></i>
+                    <h4>TypeScript</h4>
+                  </div>
+                  <div class="language-item">
+                    <i class="devicon-python-plain colored"></i>
+                    <h4>Python</h4>
+                  </div>
+                  <div class="language-item">
+                    <i class="devicon-php-plain colored"></i>
+                    <h4>PHP</h4>
+                  </div>
+                  <div class="language-item">
+                    <i class="devicon-mysql-plain colored"></i>
+                    <h4>SQL</h4>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Technologies -->
+              <div id="technologies" class="tab-content">
+                <div class="tech-categories">
+                  <!-- Front-End -->
+                  <div class="tech-category">
+                    <h3>Front-End</h3>
+                    <div class="tech-grid">
+                      <div class="tech-item">
+                        <i class="devicon-react-original colored"></i>
+                        <div class="tech-name">React.js</div>
+                      </div>
+                      <div class="tech-item">
+                        <i class="devicon-nextjs-plain colored"></i>
+                        <div class="tech-name">Next.js</div>
+                      </div>
+                      <div class="tech-item">
+                        <i class="devicon-angularjs-plain colored"></i>
+                        <div class="tech-name">Angular</div>
+                      </div>
+                      <div class="tech-item">
+                        <i class="devicon-tailwindcss-plain colored"></i>
+                        <div class="tech-name">Tailwind CSS</div>
+                      </div>
+                      <div class="tech-item">
+                        <i class="devicon-typescript-plain colored"></i>
+                        <div class="tech-name">TypeScript</div>
+                      </div>
+                      <div class="tech-item">
+                        <i class="devicon-javascript-plain colored"></i>
+                        <div class="tech-name">JavaScript</div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Back-End -->
+                  <div class="tech-category">
+                    <h3>Back-End</h3>
+                    <div class="tech-grid">
+                      <div class="tech-item">
+                        <i class="devicon-nodejs-plain colored"></i>
+                        <div class="tech-name">Node.js</div>
+                      </div>
+                      <div class="tech-item">
+                        <i class="devicon-express-original colored"></i>
+                        <div class="tech-name">Express</div>
+                      </div>
+                      <div class="tech-item">
+                        <i class="devicon-postgresql-plain colored"></i>
+                        <div class="tech-name">Prisma ORM</div>
+                      </div>
+                      <div class="tech-item">
+                        <i class="devicon-postgresql-plain colored"></i>
+                        <div class="tech-name">PostgreSQL</div>
+                      </div>
+                      <div class="tech-item">
+                        <i class="devicon-mysql-plain colored"></i>
+                        <div class="tech-name">MySQL</div>
+                      </div>
+                      <div class="tech-item">
+                        <i class="devicon-javascript-plain colored"></i>
+                        <div class="tech-name">JWT Auth</div>
+                      </div>
+                      <div class="tech-item">
+                        <i class="devicon-typescript-plain colored"></i>
+                        <div class="tech-name">Zod</div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Mobile -->
+                  <div class="tech-category">
+                    <h3>Mobile</h3>
+                    <div class="tech-grid">
+                      <div class="tech-item">
+                        <i class="devicon-react-original colored"></i>
+                        <div class="tech-name">React Native</div>
+                      </div>
+                      <div class="tech-item">
+                        <i class="devicon-react-original colored"></i>
+                        <div class="tech-name">Expo</div>
+                      </div>
+                      <div class="tech-item">
+                        <i class="devicon-redux-original colored"></i>
+                        <div class="tech-name">Redux</div>
+                      </div>
+                      <div class="tech-item">
+                        <i class="devicon-react-original colored"></i>
+                        <div class="tech-name">React Navigation</div>
+                      </div>
+                      <div class="tech-item">
+                        <i class="devicon-react-original colored"></i>
+                        <div class="tech-name">AsyncStorage</div>
+                      </div>
+                      <div class="tech-item">
+                        <i class="devicon-sqlite-plain colored"></i>
+                        <div class="tech-name">SQLite (expo-sqlite)</div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- DevOps -->
+                  <div class="tech-category">
+                    <h3>DevOps</h3>
+                    <div class="tech-grid">
+                      <div class="tech-item">
+                        <i class="devicon-docker-plain colored"></i>
+                        <div class="tech-name">Docker</div>
+                      </div>
+                      <div class="tech-item">
+                        <i class="devicon-amazonwebservices-plain colored"></i>
+                        <div class="tech-name">Vercel</div>
+                      </div>
+                      <div class="tech-item">
+                        <i class="devicon-github-original colored"></i>
+                        <div class="tech-name">GitHub Actions</div>
+                      </div>
+                      <div class="tech-item">
+                        <i class="devicon-nginx-original colored"></i>
+                        <div class="tech-name">Nginx</div>
+                      </div>
+                      <div class="tech-item">
+                        <i class="devicon-nodejs-plain colored"></i>
+                        <div class="tech-name">PM2</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Experience -->
+              <div id="experience" class="tab-content">
+                <div class="timeline">
+                  <div class="timeline-item">
+                    <div class="timeline-date">Out 2023 - Presente</div>
+                    <h3 class="timeline-title">
+                      Sócio Proprietário / Desenvolvedor Full-Stack
+                    </h3>
+                    <div class="timeline-company">
+                      Sollo Soluções Tecnológicas
+                    </div>
+                    <p class="timeline-description">
+                      Desenvolvimento de aplicações mobile com React Native
+                      (Expo) e back-end em Node.js, Express e PostgreSQL.
+                      Implementação de autenticação JWT, notificações push,
+                      sincronização offline e deploy contínuo com Vercel.
+                      Gerenciamento de infraestrutura com Google Cloud e
+                      automação de CI/CD.
+                    </p>
+                  </div>
+                  <div class="timeline-item">
+                    <div class="timeline-date">Junho 2022 - Jan 2022</div>
+                    <h3 class="timeline-title">
+                      Freelancer de Suporte Técnico
+                    </h3>
+                    <div class="timeline-company">Autônomo</div>
+                    <p class="timeline-description">
+                      Atuação com montagem, manutenção e suporte de computadores
+                      e redes locais.
+                    </p>
+                  </div>
+                  <div class="timeline-item">
+                    <div class="timeline-date">Set 2021 - Nov 2021</div>
+                    <h3 class="timeline-title">
+                      Estagiário de Desenvolvimento
+                    </h3>
+                    <div class="timeline-company">RBM Web</div>
+                    <p class="timeline-description">
+                      Desenvolvimento e manutenção de sistemas de CCBs em PHP e
+                      SQL. Criação de modelos, paginação de dados e integrações
+                      com banco de dados SQL. Ajustes em interfaces visuais e
+                      modularização de código com includes.
+                    </p>
+                  </div>
+                  <div class="timeline-item">
+                    <div class="timeline-date">Ago 2021 - Dez 2021</div>
+                    <h3 class="timeline-title">
+                      Bolsista PROEX - Projeto de Extensão
+                    </h3>
+                    <div class="timeline-company">IF Sudeste MG</div>
+                    <p class="timeline-description">
+                      Participação no projeto de extensão de divulgação
+                      científica da informática e computação em meios digitais.
+                      Apoio na produção de conteúdo e atividades técnicas como
+                      bolsista, totalizando 200 horas.
+                    </p>
+                  </div>
+                  <div class="timeline-item">
+                    <div class="timeline-date">2020</div>
+                    <h3 class="timeline-title">
+                      Membro - Empresa Júnior (EMCOMP)
+                    </h3>
+                    <div class="timeline-company">
+                      Instituto Federal - IF Sudeste MG
+                    </div>
+                    <p class="timeline-description">
+                      Participação introdutória com foco em estudos práticos de
+                      React.js. Acompanhamento de projetos e reuniões técnicas
+                      durante cerca de 2 meses.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Education -->
+              <div id="education" class="tab-content">
+                <div class="education-list">
+                  <div class="education-item">
+                    <div class="education-date">
+                      Jan 2024 - Fev 2028 (Previsto)
+                    </div>
+                    <h3 class="education-degree">
+                      Bacharelado em Ciência da Computação
+                    </h3>
+                    <div class="education-school">
+                      Instituto Federal do Sul de Minas Gerais
+                    </div>
+                    <p class="education-description">
+                      Formação superior com foco em algoritmos, estrutura de
+                      dados, engenharia de software e sistemas computacionais.
+                      Competências: C++, oratória e trabalho em equipe.
+                    </p>
+                  </div>
+                  <div class="education-item">
+                    <div class="education-date">2019 - 2023</div>
+                    <h3 class="education-degree">
+                      Curso Técnico Integrado em Informática
+                    </h3>
+                    <div class="education-school">
+                      Instituto Federal de Educação, Ciência e Tecnologia do
+                      Sudeste de Minas Gerais - Campus Rio Pomba
+                    </div>
+                    <p class="education-description">
+                      Formação técnica integrada ao ensino médio, com foco em
+                      desenvolvimento web, redes de computadores, bancos de
+                      dados e programação. Participação no projeto de extensão
+                      <i
+                        >Comunicação e Divulgação Científica da Informática e
+                        Computação em Meios Digitais</i
+                      >. Competências: Redes, SQL, HTML, CSS, PHP e
+                      versionamento de código.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="./js/features/typed.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script>
+      let vantaEffect;
+      function initVanta(isDark) {
+        if (vantaEffect) vantaEffect.destroy();
+        vantaEffect = VANTA.BIRDS({
+          el: ".about-background",
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.0,
+          minWidth: 200.0,
+          scale: 1.0,
+          scaleMobile: 1.0,
+          backgroundColor: isDark ? 0x0a0f1c : 0xf8f9fa,
+          backgroundAlpha: 0.9,
+          color1: isDark ? 0x00bbf9 : 0x00bbf9,
+          color2: isDark ? 0x9b5de5 : 0xf15bb5,
+          colorMode: "variance",
+          birdSize: 0.4,
+          wingSpan: 20.0,
+          speedLimit: 2.0,
+          separation: 45.0,
+          alignment: 2.0,
+          cohesion: 12.0,
+          quantity: 6.0,
+        });
+      }
+
+      initVanta(document.body.classList.contains("dark-mode"));
+      document
+        .getElementById("darkModeToggle")
+        .addEventListener("change", (e) => {
+          document.body.classList.toggle("dark-mode", e.target.checked);
+          initVanta(e.target.checked);
+        });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato Rodrigo</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/contact.css" />
+  </head>
+  <body class="dark-mode">
+    <!-- header -->
+    <header class="container">
+      <div class="page-header">
+        <div class="logo">
+          <a href="#">rodrigoGomes</a>
+        </div>
+        <input type="checkbox" id="click" />
+
+        <label for="click" class="mainicon">
+          <div class="menu">
+            <i class="bx bx-menu"></i>
+          </div>
+        </label>
+        <ul>
+          <li><a href="./../index.html" style="--navAni: 1">Início</a></li>
+          <li><a href="./../index.html#about" style="--navAni: 2">Sobre</a></li>
+          <li>
+            <a href="./portfolio.html" style="--navAni: 4">Portfólio</a>
+          </li>
+          <li>
+            <a class="active" href="#" style="--navAni: 5">Contato</a>
+          </li>
+        </ul>
+        <label class="mode">
+          <input type="checkbox" id="darkModeToggle" />
+          <i class="bx bxs-moon"></i>
+        </label>
+      </div>
+    </header>
+
+    <section class="contact-container container">
+      <h1 class="section-title">Entre em Contato</h1>
+
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <div class="contact-information">
+            <div class="info-item">
+              <i class="bx bx-envelope"></i>
+              <a
+                class="contacts"
+                href="mailto:digo.rodrigomalaquias@hotmail.com"
+              >
+                <h3>Email</h3>
+                <p>digo.rodrigomalaquias@hotmail.com</p>
+              </a>
+            </div>
+
+            <div class="info-item">
+              <i class="bx bx-phone"></i>
+              <div>
+                <h3>Telefone</h3>
+                <a href="https://wa.me/553299732915" target="_blank"
+                  >+55 32 9973-2915</a
+                >
+              </div>
+            </div>
+
+            <div class="info-item">
+              <i class="bx bx-map"></i>
+              <div>
+                <h3>Localização</h3>
+                <p>Rio Pomba, Minas Gerais, Brasil</p>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <h3>Conecte-se Comigo</h3>
+              <div class="social-icons">
+                <a
+                  href="https://www.linkedin.com/in/digaogomes/"
+                  target="_blank"
+                  title="LinkedIn"
+                >
+                  <i class="bx bxl-linkedin-square"></i>
+                </a>
+                <a
+                  href="https://github.com/R3nge"
+                  target="_blank"
+                  title="GitHub"
+                >
+                  <i class="bx bxl-github"></i>
+                </a>
+
+                <a
+                  href="https://wa.me/553299732915"
+                  target="_blank"
+                  title="Whasapp"
+                >
+                  <i class="bx bxl-whatsapp"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="coontact-img-div">
+            <img
+              src="https://images.unsplash.com/photo-1596524430615-b46475ddff6e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w2NjMyNTh8MHwxfHNlYXJjaHw0fHxjb250YWN0fGVufDB8fHx8MTc0NzQxOTEzN3ww&ixlib=rb-4.1.0&q=85"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="contact-form-container">
+          <h2>Envie-me uma Mensagem</h2>
+          <form
+            id="contactForm"
+            action="https://formsubmit.co/digo.rodrigomalaquias@hotmail.com"
+            method="POST"
+          >
+            <div class="form-group">
+              <label for="name">Nome</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Seu nome completo"
+                autocomplete="name"
+              />
+              <small class="error-message" id="nameError"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Seu endereço de email"
+                autocomplete="email"
+              />
+              <small class="error-message" id="emailError"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Assunto</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="Sobre o que é?"
+              />
+              <small class="error-message" id="subjectError"></small>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Mensagem</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Conte-me sobre seu projeto, pergunta ou oportunidade de trabalho"
+                rows="5"
+              ></textarea>
+              <small class="error-message" id="messageError"></small>
+            </div>
+
+            <div class="form-submit">
+              <button type="submit" id="submitBtn">
+                <i class="bx bx-send"></i> Enviar Mensagem
+              </button>
+              <div id="formStatus" class="form-status"></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script src="../js/contact.js"></script>
+    <script src="../js/index.js"></script>
+  </body>
+</html>
